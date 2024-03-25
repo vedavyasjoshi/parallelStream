@@ -7,7 +7,7 @@ startButton.addEventListener("click", () => {
   const mediaRecorder = new MediaRecorder(state.media, {
     audioBitsPerSecond: 128000,
     videoBitsPerSecond: 2500000,
-    frameRate: 25,
+    frameRate: 25, // can be ignored ad its passed on start()
   });
 
   mediaRecorder.ondataavailable = (ev) => {
